@@ -18,7 +18,6 @@ spec:
     spec:
       containers:
       - image: ${DOCKER_ACCOUNT}/java-goof:latest
-        securityContext.capabilities.drop: ALL
         imagePullPolicy: Always
         name: java-goof
       restartPolicy: Always
